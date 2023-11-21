@@ -2,7 +2,9 @@ name: Release
 
 on:
   push:
-    branches: [main]
+    branches:
+    - main
+    - 'patch-[0-9]+.[0-9]+.x'
 
 jobs:
   release:
